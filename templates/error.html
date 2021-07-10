@@ -1,0 +1,7 @@
+{% extends "index.html" %}
+
+{% block content %}
+{% for mistake in mistakes %}
+    <h3>{{ mistake }}</h3>
+{% endfor %}
+{% endblock %}

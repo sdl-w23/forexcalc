@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreign Exchange Calculator</title>
+</head>
+<body>
+    <h1>Foreign Exchange Calculator</h1>
+    <p>Enter the country you are converting from, the country you are converting to, and the amount of money that will be converted.</p>
+    <p>The current codes are EUR, IDR, BGN, ILS, GBP, DKK, CAD, JPY, HUF, RON, MYR, SEK, SGD, HKD, AUD, CHF, KRW, CNY, TRY, HRK, NZD, THB, USD, NOK, RUB, INR, MXN, CZK, BRL, PLN, PHP, and ZAR.</p>
+    <div>
+        <form action="/" method="post">
+            <label for="con-from">Converted From</label>
+            <input type="text" id="con-from" name="con-from">
+
+            <label for="con-to">Convert To</label>
+            <input type="text" id="con-to" name="con-to">
+
+            <label for="amount">Amount</label>
+            <input type="text" id="amount" name="amount">
+            <input type="submit" id="submit" value="Convert"> 
+        </form>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
